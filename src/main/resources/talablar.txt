@@ -1,0 +1,55 @@
+************* Kun.uz yangiliklar sayti *************
+
+***** Entity
+1. Profile
+3. Article
+4. Comment
+    id,content,articleId,Profile,CreatedDate (token)
+5. Like
+    id,articleId,ProfileId,createdDate,status(like,dislike)
+6. ArticleType (sport,siyosat,zahon,...)
+    id,title,content,status,region,type
+7. Region (Toshkent,Xorazm, Buxoro, Jizzax)
+    id,name
+
+2. ProfileRole
+
+
+
+**** Functionality
+
+1. Profile
+    1. Registration with email verification
+    2. Authorization
+    3. Update Profile (name,surname,login, password)
+    4. Update Profile (email) with email sending verification
+        ** ADMIN **
+    5. Create Profile
+    6. Update Profile
+    7. Delete Profile
+    8. Get Profile List
+    9. Get Profile By id
+
+2. Article
+    1. get todays article list
+    2. get article list by region
+    3. get article list by profile
+    4. get article by type
+        ** Moderator **
+    5. Create Article
+    6. Update Article
+        ** Publisher/Moderator
+    7. Delete Article
+        ** Publisher
+    8.Publish
+    9.Block
+        ** All with token **
+    8. Get Article by id
+    9. Get Article List
+
+3. Region
+    1. Create Region
+    2. Update Region
+    3. Delete Region
+    4. Get by id
+    5. Get Region list
